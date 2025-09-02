@@ -15,7 +15,7 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-    @Test    
+    @Test          
     public void testGetGreeting() {   
         when().get("https://apichallenges.eviltester.com/sim/entities").
         then().statusCode(200).contentType(ContentType.JSON);
