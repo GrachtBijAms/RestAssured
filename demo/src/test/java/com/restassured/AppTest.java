@@ -1,11 +1,11 @@
 package com.restassured;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import static org.hamcrest.Matchers.*;
-import static io.restassured.RestAssured.*;
-import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.*;
+
 
 /**
  * Unit test for simple App.
