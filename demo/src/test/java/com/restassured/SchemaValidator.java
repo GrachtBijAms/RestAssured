@@ -68,5 +68,54 @@ public class SchemaValidator {
         System.out.println("✅ Schema and values both valid");
     }
 
+    @Test
+public void testCompleteUserValidation() {
+    given()
+        .header("Content-Type", "application/json")
+        .log().all()
+    .when()
+        .get("/users/1")
+    .then()
+        .log().all()
+
+        // ── Status ──────────────────────────────────
+        .statusCode(200)
+
+        // ── Response time ────────────────────────────
+        .time(lessThan(5000L))
+
+        // ── Headers ──────────────────────────────────
+        .header("Content-Type", containsString("application/json"))
+
+        // ── Schema ───────────────────────────────────
+        .body(JsonSchemaValidator.matchesJsonSchemaInClasspath(
+            "schemas/user_schema.json"
+        ))
+
+        // ── Field existence ──────────────────────────
+        .body("id",           notNullValue())
+        .body("name",         notNullValue())
+        .body("email",        notNullValue())
+
+        // ── Field values ─────────────────────────────
+        .body("id",           equalTo(1))
+        .body("name",         equalTo("Leanne Graham"))
+        .body("email",        equalTo("Sincere@april.biz"))
+
+        // ── Field types (via schema) ──────────────────
+        .body("id",           instanceOf(Integer.class))
+        .body("name",         instanceOf(String.class))
+
+        // ── Nested fields ─────────────────────────────
+        .body("address.city", notNullValue())
+        .body("address.geo.lat", notNullValue())
+        .body("company.name",    notNullValue())
+
+        // ── String format ─────────────────────────────
+        .body("email",        containsString("@"))
+        .body("website",      containsString("."));
+}
+
+
 
 }

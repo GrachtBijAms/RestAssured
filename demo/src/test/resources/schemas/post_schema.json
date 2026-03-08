@@ -14,5 +14,7 @@
       "type": "integer"
     }
   },
-  "required": ["id", "title", "body", "userId"]
+  "required": ["id", "title", "body", "userId"],
+
+  "additionalProperties": false
 }

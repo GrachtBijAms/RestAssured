@@ -1,5 +1,5 @@
 /.vscode
-/target
+target/
 *.lst
 /.idea
 *.iml
@@ -16,4 +16,6 @@
 *.bak
 *.tmp
 *.swp
-*.swo       
+*.swo
+.DS_Store
+.DS_Store?       
