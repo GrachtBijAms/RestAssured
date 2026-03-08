@@ -59,7 +59,13 @@
 
 </dependencies>
 
+
   <build>
+      <testResources>
+        <testResource>
+            <directory>src/test/resources</directory>
+        </testResource>
+    </testResources>
    <!-- ✅ FIXED: Surefire is here in <plugins> so it actually runs -->
     <plugins>
       <plugin>

@@ -1,1 +1,17 @@
 /.vscode
+/target
+*.iml
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.sql
+*.zip
+*.tar.gz
+*.7z
+*.bak
+*.tmp
+*.swp
+*.swo       

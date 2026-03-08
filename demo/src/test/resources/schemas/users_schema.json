@@ -1,0 +1,26 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "website": {
+        "type": "string"
+      }
+    },
+    "required": ["id", "name", "email"]
+  },
+  "minItems": 1
+}

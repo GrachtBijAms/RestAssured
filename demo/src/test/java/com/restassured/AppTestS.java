@@ -102,7 +102,7 @@ public class AppTestS {
         String reqbody = """
         {
             "title": "SDET Bootcamp ",
-            "body": "Learning RestAssured with Java",
+            "body": "Learning RestAssured with Java",   
             "userId": 1
         }
                 """;
