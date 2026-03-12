@@ -19,3 +19,16 @@ target/
 *.swo
 .DS_Store
 .DS_Store?       
+.*pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+*.pem
+*.key
+*.crt
+*.p12
+*.properties
