@@ -15,10 +15,14 @@ public class SalesforceCreateTest extends SalesforceBaseTest {
     public void createAccount() {
         String requestBody = """
             {
-                "Name": "NekstIT Solutions",
-                "Phone": "+31201234567",
-                "Industry": "Technology",
-                "BillingCity": "Amstelveen"
+                "Name": "Teju Solutions",
+                "Phone": "+31691234568",
+                "Industry": "Media",
+                "BillingCity": "Den Haag",
+                "BillingState": "NH",
+                "BillingPostalCode": "1012AB",
+                "BillingCountry": "Netherlands",
+                "Type": "Customer - Direct"
             }
         """;
 
