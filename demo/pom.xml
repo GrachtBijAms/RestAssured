@@ -56,7 +56,7 @@
         <version>7.9.0</version>
         <scope>test</scope>
     </dependency>
-
+  <!-- JJWT for JWT token handling -->
     <dependency>
     <groupId>io.jsonwebtoken</groupId>
     <artifactId>jjwt-api</artifactId>
@@ -73,6 +73,12 @@
     <artifactId>jjwt-jackson</artifactId>
     <version>0.11.5</version>
     <scope>runtime</scope>
+</dependency>
+<!-- Apache POI for Excel handling -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.3</version>
 </dependency>
 
 </dependencies>
