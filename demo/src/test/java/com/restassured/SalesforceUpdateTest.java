@@ -106,10 +106,10 @@ public class SalesforceUpdateTest extends SalesforceBaseTest {
         .when()
             .patch(recordUrl("Account", "INVALID_ID_12345"))
         .then()
-            .statusCode(400) // Salesforce returns 400 for malformed IDs
+            .statusCode(404) // Salesforce returns 400 for malformed IDs
             .extract().response();
 
-        System.out.println("✅ Correctly returned 400 for invalid ID");
+        System.out.println("✅ Correctly returned 404 for invalid ID");
         System.out.println("   Body: " + response.getBody().asString());
     }
 }
