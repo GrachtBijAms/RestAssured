@@ -1,6 +1,9 @@
 package com.restassured;
 
 import org.testng.annotations.Test;
+
+import com.restassured.base.SalesforceBaseTest;
+
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 

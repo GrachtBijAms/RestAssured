@@ -1,4 +1,4 @@
-package com.restassured;
+package com.restassured.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;

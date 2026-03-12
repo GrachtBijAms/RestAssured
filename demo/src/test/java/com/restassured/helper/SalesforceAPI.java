@@ -1,4 +1,4 @@
-package com.restassured;
+package com.restassured.helper;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -11,6 +11,8 @@ import java.security.PrivateKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.util.Base64;
 import java.util.Date;
+
+import com.restassured.utils.ConfigReader;
 
 import static io.restassured.RestAssured.given;
 

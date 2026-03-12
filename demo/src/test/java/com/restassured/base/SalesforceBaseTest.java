@@ -1,10 +1,13 @@
-package com.restassured;
+package com.restassured.base;
 
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+
+import com.restassured.helper.SalesforceAPI;
+import com.restassured.utils.ConfigReader;
 
 
 public class SalesforceBaseTest {
