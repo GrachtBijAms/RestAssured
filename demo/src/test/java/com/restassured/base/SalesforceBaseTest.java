@@ -3,6 +3,8 @@ package com.restassured.base;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
@@ -35,6 +37,12 @@ public void globalSetup() {
             .addHeader("Accept", "application/json")
             .build();
     }
+
+    @AfterSuite
+public void cleanup() {
+    System.out.println("🧹 Running post-suite cleanup...");
+    // call your cleanup logic here
+}
 
     /**
      * Base URL for Salesforce REST API calls.
