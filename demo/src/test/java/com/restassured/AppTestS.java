@@ -123,7 +123,7 @@ public class AppTestS {
         given()
         .when().get("/posts/" + responseid)
         .then()
-        .statusCode(200);
+        .statusCode(404);// JSONPlaceholder does not actually create new posts, so it returns 404 for any ID greater than 100
     }
 
 }
