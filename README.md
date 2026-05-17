@@ -1,5 +1,7 @@
 # RestAssured Project
-
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![REST Assured](https://img.shields.io/badge/REST%20Assured-6DB33F?style=flat&logo=java&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apachemaven&logoColor=white)
 ## Overview
 This project is a Java-based testing framework built using RestAssured for API testing. It includes test cases for validating API responses, schema validation, and Salesforce API integration.
 
